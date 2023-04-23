@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./recursos/encriptado.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="caja">
+      <img src="./recursos/Logo_Alura.png" alt="Logo Alura LATAM">
+      <h1>Encriptador</h1>
+      <img src="./recursos/Logo_ONE.svg" alt="Logo Oracle Next Education">
+    </div>
+  </header>
+
+  <main>
+    <section id="entrada">
+      <textarea name="textoEntrada" id="textoEntrada" placeholder="Ingrese el texto aquí" autofocus></textarea>
+      <img src="./recursos/advertencia.png" alt="Símbolo de advertencia">
+      <p>Sólo letras minúsculas y sin acentos</p>
+      <br>
+      <button class="btnOscuro" id="encriptarBtn">Encriptar</button>
+      <button class="btnClaro" id="desencriptarBtn">Desencriptar</button>
+    </section>
+    <section id="resultado">
+      <img src="./recursos/Muñeco.png" alt="Persona mirando con una lupa" id="resultImg">
+      <div id="resTxt">
+        <p id="textonegritas">No se ha encontrado ningún mensaje.</p>
+        <br>
+        <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./recursos/logo-challenge.svg" alt="Logo alura challenges" id="logoChallenges">
+    <p>Said Bañuelos</p>
+  </footer>
+  
+<script src="app.js"></script>
+</body>
+</html>
