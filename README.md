@@ -10,3 +10,5 @@ La reglas de encriptadión son las siguientes:
 - La letra "u" es convertida para "ufat"
 
 El proyecto fue realizado con HTML, CSS y JavaScript.
+
+El despliege del encriptador se realiza por medio de GitHub Pages en el siguiente enlace https://saidbanuelos.github.io/encriptador/
