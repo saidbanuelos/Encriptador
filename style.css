@@ -259,6 +259,8 @@ footer p {
     justify-content: flex-start;
     width: 0;
   }
-
   
+  footer {
+    position: relative;
+  }
 }
