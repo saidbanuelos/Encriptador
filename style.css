@@ -167,7 +167,7 @@ footer p {
 }
 
 /* mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 720px) {
   header {
     width: 100vw;
   }
@@ -228,7 +228,7 @@ footer p {
 }
 
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   main {
     flex-direction: column;
   }
