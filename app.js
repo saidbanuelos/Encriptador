@@ -1,13 +1,18 @@
 //Funciones
 function encriptar() {
+  
+
   textoModificado = textoEntrada.value.toLowerCase()
     .replace(/e/img, "enter")
     .replace(/i/img, "imes")
     .replace(/a/img, "ai")
     .replace(/o/img, "ober")
     .replace(/u/img, "ufat");
+
   if(textoEntrada.value.trim() == "") {
     alert("¡Oops! No hay nada para encriptar. Ingresa algo de texto.")
+  } else if(acentos.test(textoEntrada.value)) {
+    alert("El texto ingresado no debe contener acentos.")
   } else {
     modificarResultados();
   }
@@ -21,8 +26,10 @@ function desencriptar() {
     .replace(/ai/img, "a")
     .replace(/ober/img, "o")
     .replace(/ufat/img, "u");
-  if(textoEntrada.value.trim() == "") {
+  if(textoEntrada.value.trim() == "" ) {
     alert("¡Oops! No hay nada para desencriptar. Ingresa algo de texto.")
+  } else if(acentos.test(textoEntrada.value)) {
+    alert("El texto ingresado no debe contener acentos.")
   } else {
     modificarResultados();
   }
@@ -69,6 +76,7 @@ function copiarTexto() {
 let encriptarBtn = document.getElementById("encriptarBtn");
 let desencriptarBtn = document.getElementById("desencriptarBtn");
 let textoEntrada = document.getElementById("textoEntrada");
+let acentos = /[áéíóú]/;
 let botonCopiar = document.createElement("button");
 let textoBoton = document.createTextNode("Copiar");
 botonCopiar.className = "btnClaro";
