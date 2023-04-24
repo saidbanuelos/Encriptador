@@ -6,7 +6,11 @@ function encriptar() {
     .replace(/a/img, "ai")
     .replace(/o/img, "ober")
     .replace(/u/img, "ufat");
-  modificarResultados();
+  if(textoEntrada.value == "") {
+    alert("¡Oops! No hay nada para encriptar. Ingresa algo de texto.")
+  } else {
+    modificarResultados();
+  }
   return textoModificado;
 }
 
@@ -17,7 +21,11 @@ function desencriptar() {
     .replace(/ai/img, "a")
     .replace(/ober/img, "o")
     .replace(/ufat/img, "u");
-  modificarResultados();
+  if(textoEntrada.value == "") {
+    alert("¡Oops! No hay nada para desencriptar. Ingresa algo de texto.")
+  } else {
+    modificarResultados();
+  }
   return textoModificado;
 }
 
