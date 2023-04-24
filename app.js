@@ -3,6 +3,11 @@ function encriptar() {
   
 
   textoModificado = textoEntrada.value.toLowerCase()
+    .replace(/á/img, "a")
+    .replace(/é/img, "e")
+    .replace(/í/img, "i")
+    .replace(/ó/img, "o")
+    .replace(/ú/img, "u")
     .replace(/e/img, "enter")
     .replace(/i/img, "imes")
     .replace(/a/img, "ai")
@@ -11,8 +16,6 @@ function encriptar() {
 
   if(textoEntrada.value.trim() == "") {
     alert("¡Oops! No hay nada para encriptar. Ingresa algo de texto.")
-  } else if(acentos.test(textoEntrada.value)) {
-    alert("El texto ingresado no debe contener acentos.")
   } else {
     modificarResultados();
   }
@@ -21,6 +24,11 @@ function encriptar() {
 
 function desencriptar() {
   textoModificado = textoEntrada.value.toLowerCase()
+    .replace(/á/img, "a")
+    .replace(/é/img, "e")
+    .replace(/í/img, "i")
+    .replace(/ó/img, "o")
+    .replace(/ú/img, "u")
     .replace(/enter/img, "e")
     .replace(/imes/img, "i")
     .replace(/ai/img, "a")
@@ -28,8 +36,6 @@ function desencriptar() {
     .replace(/ufat/img, "u");
   if(textoEntrada.value.trim() == "" ) {
     alert("¡Oops! No hay nada para desencriptar. Ingresa algo de texto.")
-  } else if(acentos.test(textoEntrada.value)) {
-    alert("El texto ingresado no debe contener acentos.")
   } else {
     modificarResultados();
   }
