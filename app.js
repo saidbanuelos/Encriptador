@@ -114,7 +114,7 @@ botonCopiar.className = "btnClaro";
 botonCopiar.id = "copiarBtn";
 botonCopiar.appendChild(textoBoton);
 let nuevoResultado = document.getElementById("resultado");
-let parrafoResultado = document.createElement("p");
+let parrafoResultado = document.createElement("textarea");
 parrafoResultado.id = "parrafoResult";
 let textoModificado = "";
 let elementosEliminados = false;

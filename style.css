@@ -83,7 +83,7 @@ main {
   resize: none;
   outline: none;
   font-family: 'Roboto Serif', serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #0A3871;
 }
 
@@ -168,10 +168,16 @@ main {
 }
 
 #parrafoResult {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2em;
   color: #0A3871;
-  margin: 40px 10px 0;
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+  width: 90%;
+  height: 100%;
 }
 
 footer {
